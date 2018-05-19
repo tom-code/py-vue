@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+
+<body>
+<script>
+  console.log('nazdar');
+  console.log(location);
+  ws_url = 'ws://' + location.host + '/ws/1'
+  var ws = new WebSocket(ws_url, "1");
+  ws.onerror = function(error) {
+    console.log(error);
+  };
+  ws.onopen = function (event) {
+    ws.send("zzz123");
+    ws.send("zzz123");
+    ws.send("zzz123");
+    console.log("send");
+    console.log(event);
+  };
+</script>
+</body>
+
+
+</html>

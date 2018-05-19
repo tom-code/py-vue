@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+  <div id="app">
+    {{ gogo }}
+    <comp1> </comp1>
+  </div>
+
+  <script src="vue.min.js"></script>
+  <script src="comp1.js"></script>
+  <script>
+      var app = new Vue({
+        el: '#app',
+        data: { gogo: 'hoho' }
+      })
+  </script>
+
+
+</body>
+
+</html>
